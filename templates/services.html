@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Абонементы</h2>
+<div class="card-grid">
+  {% for plan in plans %}
+  <div class="card {{ plan.name|lower|replace('+', 'plus') }}">
+    <h3>{{ plan.name }}</h3>
+    <p>{{ plan.description }}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

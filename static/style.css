@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a1f44;
+    color: white;
+}
+
+.navbar {
+    background-color: #02112c;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    padding: 2em;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+}
+
+.card {
+    background-color: #142f5a;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+form label, form input, form select {
+    font-size: 1.2em;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+form select {
+    width: 100%;
+    padding: 0.5em;
+}
+
+form .form-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+form .form-left,
+form .form-right {
+    width: 48%;
+}
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2em;
+    background: white;
+    color: black;
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.schedule-table th {
+    background-color: #02112c;
+    color: white;
+}
+
+.facility-images {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.facility-img {
+    width: 45%;
+    max-width: 500px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+.card.normal {
+    background-color: #3c6382;
+    color: white;
+}
+
+.card.normalplus {
+    background-color: #38ada9;
+    color: white;
+}
+
+.card.vip {
+    background-color: #e58e26;
+    color: white;
+}
+
+.card.vipplus {
+    background-color: #b71540;
+    color: white;
+}
+
+.card.unlim {
+    background-color: #6a1b9a;
+    color: white;
+}
+.main-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    margin: 20px 0;
+}
+
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 0;
+    gap: 1.5em;
+}
+
+.info-block {
+    flex: 1;
+    min-width: 250px;
+    background-color: #142f5a;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    color: white;
+}
+
+.cta-button {
+    background-color: #ff5733;
+    color: white;
+    font-size: 1.2em;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #c70039;
+}

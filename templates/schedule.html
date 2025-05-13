@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Расписание групповых занятий</h2>
+<table class="schedule-table">
+  <thead>
+    <tr>
+      <th>День</th>
+      <th>08:00 – 09:00</th>
+      <th>12:00 – 13:00</th>
+      <th>18:00 – 19:00</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Понедельник</td><td>Плавание</td><td>Фитнес</td><td>Бокс</td></tr>
+    <tr><td>Вторник</td><td>Пилатес</td><td>Бокс</td><td>Фитнес</td></tr>
+    <tr><td>Среда</td><td>Фитнес</td><td>Плавание</td><td>Пилатес</td></tr>
+    <tr><td>Четверг</td><td>Бокс</td><td>Фитнес</td><td>Плавание</td></tr>
+    <tr><td>Пятница</td><td>Пилатес</td><td>Бокс</td><td>Фитнес</td></tr>
+    <tr><td>Суббота</td><td>Плавание</td><td>Фитнес</td><td>Пилатес</td></tr>
+  </tbody>
+</table>
+
+<div class="facility-images">
+  <h3>Наши залы</h3>
+  <img src="{{ url_for('static', filename='images/pool.jpg') }}" alt="Бассейн" class="facility-img">
+  <img src="{{ url_for('static', filename='images/boxing.jpg') }}" alt="Бокс зал" class="facility-img">
+</div>
+{% endblock %}
