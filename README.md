@@ -16,7 +16,7 @@ A stylish and functional web app for gym membership and info pages.
 
 ```bash
 git clone https://github.com/Alokohoy/Gym_membership
-cd folks-gym
+cd Gym_membership
 ``` 
 Visit http://127.0.0.1:5000 in your browser.
 
